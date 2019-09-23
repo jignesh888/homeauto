@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border = 1>-->
+<!--         {% for key, value in result.items() %}-->
+<!--            <tr>-->
+<!--               <th> {{ key }} </th>-->
+<!--               <td> {{ value }} </td>-->
+<!--            </tr>-->
+<!--         {% endfor %}-->
+<!--      	</table>-->
+
+    {% for var in string1 %}
+            {% for a in var.split(",") %}
+                <h5>{{ var }}</h5>
+            {% endfor %}
+        {% endfor %}
+
+
+    {% for x in string1.split(',') %}
+
+                <h5>{{x}}</h5>
+
+        {% endfor %}
+
+
+
+
+
+
+
+
+    {% for dict_item in string1 %}
+            {% for key, value in dict_item.items() %}
+                <h1>Key: {{key}}</h1>
+                <h2>Value: {{value}}</h2>
+            {% endfor %}
+        {% endfor %}
+
+
+
+
+
+ # rr1 = str(result)
+
+            # for s in result:
+            #     for ss in s:
+            #         a['username'] = ss['username']
+            #         a['password'] = ss['password']
+            #         return a
+            # for row in result:
+            #     for row1 in row:
+            #         a['username'] = row1['username']
+            #         a['password'] = row1['password']
+                    # count = count+1
+                    # rr= str(count)
+
+            #Method 1:
+            # for i in bad_chars:
+            #     rr1=rr1.replace(i,'')
+            # result1 = str(rr1)
+
+
+            # for line in result1:
+            #     x = line.split(",")
+            #     a = x[0]
+            #     b = x[1]
+                # c = len(b)-1
+                # b = b[0:c]
+                # d[a] = b
+
+            # s = "{" + result1 + "}"
+
+            #Method 2:
+            # rr1 = ''.join(i for i in rr1 if not i in bad_chars)
+
+            #Method 3:
+            # rr1 = filter(lambda i: i not in bad_chars, rr1)
+
+            #Method 4:
+            # rr1 = rr1.translate(''.join(bad_chars))
+            # rr = print(result)
+
+            # resulttt = {'X-My-Header': 'foo', 'Jignesh': 'hello','X-My-Headerrrrrrr': 'foo', 'Jigneshh': 'hello'}
+
+
+
+
+
+
+    #rr1 = str(result)
+            # rr1 = str(result).strip("()")
+
+            # for i in bad_chars:
+            #       rr1=rr1.replace(i,'')
+            #       rr1 = str(rr1)
+            # rr1 = [{'A': 'val1', 'B': 'val2'}, {'C': 'val3', 'D': 'val4'}]
+</body>
+</html>
