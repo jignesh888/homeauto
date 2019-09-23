@@ -10,11 +10,7 @@ app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'newdb'
 mysql = MySQL(app)
 
-@app.route('/')
-def yesss():
-        return "hello world"
-
-@app.route('/main11', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def login():
         if 'username' in session:
             username = session['username']
