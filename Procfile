@@ -1,1 +1,1 @@
-web gunicorn main:yesss
+web gunicorn main:app
