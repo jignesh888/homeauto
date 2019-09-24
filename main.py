@@ -4,10 +4,10 @@ import MySQLdb.cursors
 
 app = Flask(__name__)
 app.secret_key = '_sbDdEOVwmMzzbn7eROWxg'
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'newdb'
+app.config['MYSQL_HOST'] = 'sailasercom.ipagemysql.com'
+app.config['MYSQL_USER'] = 'homeauto'
+app.config['MYSQL_PASSWORD'] = 'Home@123'
+app.config['MYSQL_DB'] = 'home_auto'
 mysql = MySQL(app)
 
 @app.route('/', methods=['GET', 'POST'])
